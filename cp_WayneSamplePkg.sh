@@ -1,0 +1,1 @@
+cp -rf ./WayneSamplePkg                    ../../code/edk2/
