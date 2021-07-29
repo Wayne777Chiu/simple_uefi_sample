@@ -1,0 +1,37 @@
+## @file  WayneSamplePkg.dec
+# Shell Package
+#
+# Copyright (c) 2021 - 2021, Wayne Chiu. All rights reserved.<BR>
+#
+#    This program and the accompanying materials
+#    are licensed and made available under the terms and conditions of the BSD License
+#    which accompanies this distribution. The full text of the license may be found at
+#    http://opensource.org/licenses/bsd-license.php
+#
+#    THE PROGRAM IS DISTRIBUTED UNDER THE BSD LICENSE ON AN "AS IS" BASIS,
+#    WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.
+#
+##
+
+
+
+[Defines]
+  DEC_SPECIFICATION              = 0x00010005
+  PACKAGE_NAME                   = WayneSimple
+  PACKAGE_UNI_FILE               = WayneSimple.uni
+  PACKAGE_GUID                   = f387f8bc-ebfb-4163-9ed5-b8980ed0f366
+  PACKAGE_VERSION                = 0.1
+
+[Includes]
+  Include
+
+[Includes.Common.Private]
+
+# [TODO] Remvoe it!!
+#  Library/BrotliCustomDecompressLib/brotli/c/include
+
+[LibraryClasses]
+  ##  @libraryclass  Defines a set of methods to reset whole system.
+
+# [TODO] Remvoe it!!
+#  ResetSystemLib|Include/Library/ResetSystemLib.h

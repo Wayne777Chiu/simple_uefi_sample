@@ -1,4 +1,4 @@
-##  @file
+##  @file WayneSamplePkg.dsc
 # Shell Package
 #
 # Copyright (c) 2021 - 2021, Wayne Chiu. All rights reserved.<BR>
