@@ -43,3 +43,6 @@
  #  
  # Misc
  # 
+
+ [Component]
+   WayneSamplePkg/Application/Snake/Snake.inf

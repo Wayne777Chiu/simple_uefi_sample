@@ -47,3 +47,8 @@
 [LibararyClasses]
 
 [FeaturePcd]
+
+[pcd]
+
+[UserExtensions.TianoCore."ExtraFiles"]
+  HelloWorldExtra.uni

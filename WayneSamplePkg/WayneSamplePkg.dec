@@ -37,3 +37,13 @@
 #  ResetSystemLib|Include/Library/ResetSystemLib.h
 
 [Guids]
+  ## WayneSample package token space guid
+  # Include/Guid/MdeModulePkgTokenSpace.h
+  gEfiWayneSamplePkgTokenSpaceGuid       = { 0xA1AFF049, 0xFDEB, 0x442a, { 0xB3, 0x20, 0x13, 0xAB, 0x4C, 0xB7, 0x2B, 0xBC }}
+
+[PcdsFixedAtBuild, PcdsPatchableInModule, PcdsDynamic, PcdsDynamicEx]
+  ## This PCD defines the Snake print string.
+  #  This PCD is a sample to explain String typed PCD usage. (for Snake)
+  # @Prompt Snake print string.
+  # [TODO]About the value data we need to check.
+  gEfiWayneSamplePkgTokenSpaceGuid.PcdSnakePrintString|L"UEFI Snake play!\n"|VOID*|0x40000004
