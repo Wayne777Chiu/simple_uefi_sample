@@ -41,6 +41,14 @@
   # Include/Guid/MdeModulePkgTokenSpace.h
   gEfiWayneSamplePkgTokenSpaceGuid       = { 0xA1AFF049, 0xFDEB, 0x442a, { 0xB3, 0x20, 0x13, 0xAB, 0x4C, 0xB7, 0x2B, 0xBC }}
 
+[PcdsFeatureFlag]
+  ## Indicates if Snake Application will print the verbose information.
+  #  This PCD is a sample to explain FeatureFlag PCD usage.<BR><BR>
+  #   TRUE  - Snake Application will print the verbose information.<BR>
+  #   FALSE - Snake Application will not print the verbose information.<BR>
+  # @Prompt Enable Snake print.
+  gEfiWayneSamplePkgTokenSpaceGuid.PcdSnakePrintEnable|TRUE|BOOLEAN|0x0001200a
+
 [PcdsFixedAtBuild, PcdsPatchableInModule, PcdsDynamic, PcdsDynamicEx]
   ## This PCD defines the Snake print string.
   #  This PCD is a sample to explain String typed PCD usage. (for Snake)

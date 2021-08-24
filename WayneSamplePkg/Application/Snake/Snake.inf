@@ -45,10 +45,15 @@
 
 # Necessary Section
 [LibararyClasses]
+  UefiApplicationEntryPoint
+  UefiLib
+  PcdLib
 
 [FeaturePcd]
+  gEfiWayneSamplePkgTokenSpaceGuid.PcdSnakePrintEnable    ## CONSUMES
 
 [pcd]
+  gEfiWayneSamplePkgTokenSpaceGuid.PcdSnakePrintString    ## SOMETIMES_CONSUMES
 
 [UserExtensions.TianoCore."ExtraFiles"]
   HelloWorldExtra.uni

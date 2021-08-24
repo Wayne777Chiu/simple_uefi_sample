@@ -12,4 +12,10 @@
 
 #string STR_gEfiWayneSamplePkgTokenSpaceGuid_PcdSnakePrintString_PROMPT  #language en-US "Snake print string"
 
-nakePrintString_HELP  #language en-US "This PCD defines the Snake print string. This PCD is a sample to explain String typed PCD usage."#string STR_gEfiWayneSamplePkgTokenSpaceGuid_PcdS
+#string STR_gEfiWayneSamplePkgTokenSpaceGuid_PcdSnakePrintString_HELP  #language en-US "This PCD defines the Snake print string. This PCD is a sample to explain String typed PCD usage."
+
+#string STR_gEfiWayneSamplePkgTokenSpaceGuid_PcdSnakePrintEnable_PROMPT  #language en-US "Enable Snake print"
+
+#string STR_gEfiWayneSamplePkgTokenSpaceGuid_PcdSnakePrintEnable_HELP  #language en-US "Indicates if Snake Application will print the verbose information. This PCD is a sample to explain FeatureFlag PCD usage.<BR><BR>\n"
+                                                                                          "TRUE  - Snake Application will print the verbose information.<BR>\n"
+                                                                                          "FALSE - Snake Application will not print the verbose information.<BR>"
