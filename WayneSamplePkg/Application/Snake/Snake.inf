@@ -54,6 +54,7 @@
 
 [pcd]
   gEfiWayneSamplePkgTokenSpaceGuid.PcdSnakePrintString    ## SOMETIMES_CONSUMES
+  gEfiWayneSamplePkgTokenSpaceGuid.PcdSnakePrintTimes     ## SOMETIMES_CONSUMES
 
 [UserExtensions.TianoCore."ExtraFiles"]
-  HelloWorldExtra.uni
+  SnakeExtra.uni
