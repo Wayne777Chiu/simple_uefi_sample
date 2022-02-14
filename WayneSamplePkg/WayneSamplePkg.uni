@@ -1,0 +1,21 @@
+// /** @file
+// This package provides the modules that conform to UEFI/PI Industry standards.
+//
+// It also provides the definitions(including PPIs/PROTOCOLs/GUIDs and library classes)
+// and libraries instances, which are used for those modules.
+//
+// Copyright (c) 2021 - 2021, , Wayne Chiu. All rights reserved.<BR>
+//
+// SPDX-License-Identifier: BSD-2-Clause-Patent
+//
+// **/
+
+#string STR_gEfiWayneSamplePkgTokenSpaceGuid_PcdSnakePrintString_PROMPT  #language en-US "Snake print string"
+
+#string STR_gEfiWayneSamplePkgTokenSpaceGuid_PcdSnakePrintString_HELP  #language en-US "This PCD defines the Snake print string. This PCD is a sample to explain String typed PCD usage."
+
+#string STR_gEfiWayneSamplePkgTokenSpaceGuid_PcdSnakePrintEnable_PROMPT  #language en-US "Enable Snake print"
+
+#string STR_gEfiWayneSamplePkgTokenSpaceGuid_PcdSnakePrintEnable_HELP  #language en-US "Indicates if Snake Application will print the verbose information. This PCD is a sample to explain FeatureFlag PCD usage.<BR><BR>\n"
+                                                                                          "TRUE  - Snake Application will print the verbose information.<BR>\n"
+                                                                                          "FALSE - Snake Application will not print the verbose information.<BR>"
