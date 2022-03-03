@@ -44,7 +44,7 @@
   MdeModulePkg/MdeModulePkg.dec
 
 # Necessary Section
-[LibararyClasses]
+[LibraryClasses]
   UefiApplicationEntryPoint
   UefiLib
   PcdLib

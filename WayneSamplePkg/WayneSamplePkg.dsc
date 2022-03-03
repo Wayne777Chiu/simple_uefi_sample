@@ -23,15 +23,19 @@
  BUILD_TARGETS                  = DEBUG|RELEASE
  SKUID_IDENTIFIER               = DEFAULT
 
-[LibrearyClasses]
+[LibraryClasses]
  #  
  # Entry point
- # 
+ #
+ UefiLib|MdePkg/Library/UefiLib/UefiLib.inf
+ UefiApplicationEntryPoint|MdePkg/Library/UefiApplicationEntryPoint/UefiApplicationEntryPoint.inf
+ PcdLib|MdePkg/Library/BasePcdLibNull/BasePcdLibNull.inf
 
  #  
  # Basic
- # 
-
+ #
+ BaseLib|MdePkg/Library/BaseLib/BaseLib.inf 
+ BaseMemoryLib|MdePkg/Library/BaseMemoryLib/BaseMemoryLib.inf
  #  
  # UEFI & PI 
  # 
@@ -40,9 +44,10 @@
  # Generic Modules
  # 
 
- #  
+ #
  # Misc
- # 
+ #
+ DebugLib|MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull.inf
 
- [Component]
+ [Components]
    WayneSamplePkg/Application/Snake/Snake.inf
