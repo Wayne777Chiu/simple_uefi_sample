@@ -19,3 +19,6 @@
 #string STR_gEfiWayneSamplePkgTokenSpaceGuid_PcdSnakePrintEnable_HELP  #language en-US "Indicates if Snake Application will print the verbose information. This PCD is a sample to explain FeatureFlag PCD usage.<BR><BR>\n"
                                                                                           "TRUE  - Snake Application will print the verbose information.<BR>\n"
                                                                                           "FALSE - Snake Application will not print the verbose information.<BR>"
+#string STR_gEfiWayneSamplePkgTokenSpaceGuid_PcdSnakePrintTimes_PROMPT  #language en-US "Sanke print times"
+
+#string STR_gEfiWayneSamplePkgTokenSpaceGuid_PcdSnakePrintTimes_HELP  #language en-US "This PCD defines the times to print Snake string. This PCD is a sample to explain UINT32 PCD usage."                                                            

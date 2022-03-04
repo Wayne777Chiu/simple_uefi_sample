@@ -24,30 +24,62 @@
  SKUID_IDENTIFIER               = DEFAULT
 
 [LibraryClasses]
- #  
- # Entry point
- #
- UefiLib|MdePkg/Library/UefiLib/UefiLib.inf
- UefiApplicationEntryPoint|MdePkg/Library/UefiApplicationEntryPoint/UefiApplicationEntryPoint.inf
- PcdLib|MdePkg/Library/BasePcdLibNull/BasePcdLibNull.inf
+  #  
+  # Entry point
+  #
+  UefiLib|MdePkg/Library/UefiLib/UefiLib.inf
+  UefiApplicationEntryPoint|MdePkg/Library/UefiApplicationEntryPoint/UefiApplicationEntryPoint.inf
+  PcdLib|MdePkg/Library/BasePcdLibNull/BasePcdLibNull.inf
+  RegisterFilterLib|MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull.inf
+  #  
+  # Basic
+  #
+  BaseLib|MdePkg/Library/BaseLib/BaseLib.inf 
+  BaseMemoryLib|MdePkg/Library/BaseMemoryLib/BaseMemoryLib.inf
+  PrintLib|MdePkg/Library/BasePrintLib/BasePrintLib.inf
+  #
+  # UEFI & PI
+  #
+  UefiBootServicesTableLib|MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib.inf
+  UefiRuntimeServicesTableLib|MdePkg/Library/UefiRuntimeServicesTableLib/UefiRuntimeServicesTableLib.inf
+  DevicePathLib|MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib.inf
+  #  
+  # Generic Modules
+  # 
+  #
+  # Misc
+  #
+  DebugLib|MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull.inf
 
- #  
- # Basic
- #
- BaseLib|MdePkg/Library/BaseLib/BaseLib.inf 
- BaseMemoryLib|MdePkg/Library/BaseMemoryLib/BaseMemoryLib.inf
- #  
- # UEFI & PI 
- # 
+[LibraryClasses.common.PEI_CORE]
+  MemoryAllocationLib|MdePkg/Library/PeiMemoryAllocationLib/PeiMemoryAllocationLib.inf
 
- #  
- # Generic Modules
- # 
+[LibraryClasses.common.PEIM]
+  MemoryAllocationLib|MdePkg/Library/PeiMemoryAllocationLib/PeiMemoryAllocationLib.inf
 
- #
- # Misc
- #
- DebugLib|MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull.inf
+[LibraryClasses.common.DXE_CORE]
+  MemoryAllocationLib|MdeModulePkg/Library/DxeCoreMemoryAllocationLib/DxeCoreMemoryAllocationLib.inf
+
+[LibraryClasses.common.DXE_DRIVER]
+  MemoryAllocationLib|MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib.inf
+
+[LibraryClasses.common.DXE_RUNTIME_DRIVER]
+  MemoryAllocationLib|MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib.inf
+
+[LibraryClasses.common.SMM_CORE]
+  MemoryAllocationLib|MdeModulePkg/Library/PiSmmCoreMemoryAllocationLib/PiSmmCoreMemoryAllocationLib.inf
+
+[LibraryClasses.common.DXE_SMM_DRIVER]
+  MemoryAllocationLib|MdePkg/Library/SmmMemoryAllocationLib/SmmMemoryAllocationLib.inf
+
+[LibraryClasses.common.UEFI_DRIVER]
+  MemoryAllocationLib|MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib.inf
+
+[LibraryClasses.common.UEFI_APPLICATION]
+  MemoryAllocationLib|MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib.inf
+
+[LibraryClasses.common.MM_STANDALONE]
+  MemoryAllocationLib|MdeModulePkg/Library/BaseMemoryAllocationLibNull/BaseMemoryAllocationLibNull.inf
 
  [Components]
    WayneSamplePkg/Application/Snake/Snake.inf

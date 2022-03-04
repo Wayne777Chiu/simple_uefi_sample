@@ -55,3 +55,4 @@
   # @Prompt Snake print string.
   # [TODO]About the value data we need to check.
   gEfiWayneSamplePkgTokenSpaceGuid.PcdSnakePrintString|L"UEFI Snake play!\n"|VOID*|0x40000004
+  gEfiWayneSamplePkgTokenSpaceGuid.PcdSnakePrintTimes|1|UINT32|0x40000005
