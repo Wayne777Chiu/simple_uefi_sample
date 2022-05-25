@@ -7,6 +7,11 @@ EDK2VER=''
 TARGET_FOLDER=$(find ${GOTO_ROOT} -maxdepth 1 -type d -name '*'${KEYSEARCH}'*' -print -quit | sed 's/..\///g')
 #/edk2-stable202111_bak
 
+<<<<<<< HEAD
+sudo apt install git,g++
+
+=======
+>>>>>>> e5e1643386f70d5bf6cf89f3f93df62c6b541d16
 BACKFLODERFLAG=0
 #check the folder is bakup or workspace folder.
 if [[ "${TARGET_FOLDER}" == *"_bak"* ]]; then

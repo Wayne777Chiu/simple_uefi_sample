@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## @file
 #  Sample UEFI Application Reference EDKII Module.
 #
@@ -59,3 +60,66 @@
 
 [UserExtensions.TianoCore."ExtraFiles"]
   SnakeExtra.uni
+=======
+## @file
+#  Sample UEFI Application Reference EDKII Module.
+#
+#  This is a sample screen application that play Snake game to the
+#  UEFI Console based on PCD setting.
+#
+#  This is first apllication for study UEFI more flexible.
+#
+#  Copyright (c) 2021 - 2021, Wayne Chiu. All rights reserved.<BR>
+#
+#  SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+#
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = Snake
+  MODULE_UNIT_FILE               = Snake.uni
+  FILE_GUID                      = B4559C56-7F5D-4207-A23C-479AD7EFC049
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 0.1
+  ENTRY_POINT                    = UefiMain
+
+#
+#  This flag specifies whether HII resource section is generaed into PE image.
+#
+  UEFI_HII_RESOURCE_SECTION      = TRUE
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64 EBC
+#
+
+#Necessary Section
+[Sources]
+  Snake.c
+  SnakeStr.uni
+
+#Necessary Section
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  WayneSamplePkg/WayneSamplePkg.dec
+
+# Necessary Section
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiLib
+  PcdLib
+
+[FeaturePcd]
+  gEfiWayneSamplePkgTokenSpaceGuid.PcdSnakePrintEnable    ## CONSUMES
+
+[pcd]
+  gEfiWayneSamplePkgTokenSpaceGuid.PcdSnakePrintString    ## SOMETIMES_CONSUMES
+  gEfiWayneSamplePkgTokenSpaceGuid.PcdSnakePrintTimes     ## SOMETIMES_CONSUMES
+
+[UserExtensions.TianoCore."ExtraFiles"]
+  SnakeExtra.uni
+>>>>>>> e5e1643386f70d5bf6cf89f3f93df62c6b541d16

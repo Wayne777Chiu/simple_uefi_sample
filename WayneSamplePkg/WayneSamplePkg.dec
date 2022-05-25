@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## @file  WayneSamplePkg.dec
 # Shell Package
 #
@@ -56,3 +57,63 @@
   # [TODO]About the value data we need to check.
   gEfiWayneSamplePkgTokenSpaceGuid.PcdSnakePrintString|L"UEFI Snake play!\n"|VOID*|0x40000004
   gEfiWayneSamplePkgTokenSpaceGuid.PcdSnakePrintTimes|1|UINT32|0x40000005
+=======
+## @file  WayneSamplePkg.dec
+# Shell Package
+#
+# Copyright (c) 2021 - 2021, Wayne Chiu. All rights reserved.<BR>
+#
+#    This program and the accompanying materials
+#    are licensed and made available under the terms and conditions of the BSD License
+#    which accompanies this distribution. The full text of the license may be found at
+#    http://opensource.org/licenses/bsd-license.php
+#
+#    THE PROGRAM IS DISTRIBUTED UNDER THE BSD LICENSE ON AN "AS IS" BASIS,
+#    WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.
+#
+##
+
+
+
+[Defines]
+  DEC_SPECIFICATION              = 0x00010005
+  PACKAGE_NAME                   = WayneSimple
+  PACKAGE_UNI_FILE               = WayneSimple.uni
+  PACKAGE_GUID                   = f387f8bc-ebfb-4163-9ed5-b8980ed0f366
+  PACKAGE_VERSION                = 0.1
+
+[Includes]
+  Include
+
+[Includes.Common.Private]
+
+# [TODO] Remvoe it!!
+#  Library/BrotliCustomDecompressLib/brotli/c/include
+
+[LibraryClasses]
+  ##  @libraryclass  Defines a set of methods to reset whole system.
+
+# [TODO] Remvoe it!!
+#  ResetSystemLib|Include/Library/ResetSystemLib.h
+
+[Guids]
+  ## WayneSample package token space guid
+  # Include/Guid/MdeModulePkgTokenSpace.h
+  gEfiWayneSamplePkgTokenSpaceGuid       = { 0xA1AFF049, 0xFDEB, 0x442a, { 0xB3, 0x20, 0x13, 0xAB, 0x4C, 0xB7, 0x2B, 0xBC }}
+
+[PcdsFeatureFlag]
+  ## Indicates if Snake Application will print the verbose information.
+  #  This PCD is a sample to explain FeatureFlag PCD usage.<BR><BR>
+  #   TRUE  - Snake Application will print the verbose information.<BR>
+  #   FALSE - Snake Application will not print the verbose information.<BR>
+  # @Prompt Enable Snake print.
+  gEfiWayneSamplePkgTokenSpaceGuid.PcdSnakePrintEnable|TRUE|BOOLEAN|0x0001200a
+
+[PcdsFixedAtBuild, PcdsPatchableInModule, PcdsDynamic, PcdsDynamicEx]
+  ## This PCD defines the Snake print string.
+  #  This PCD is a sample to explain String typed PCD usage. (for Snake)
+  # @Prompt Snake print string.
+  # [TODO]About the value data we need to check.
+  gEfiWayneSamplePkgTokenSpaceGuid.PcdSnakePrintString|L"UEFI Snake play!\n"|VOID*|0x40000004
+  gEfiWayneSamplePkgTokenSpaceGuid.PcdSnakePrintTimes|1|UINT32|0x40000005
+>>>>>>> e5e1643386f70d5bf6cf89f3f93df62c6b541d16

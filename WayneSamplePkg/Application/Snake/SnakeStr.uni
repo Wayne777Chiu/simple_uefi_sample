@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // /** @file
 // Sample UEFI Application Reference EDKII Module.
 //
@@ -20,3 +21,27 @@
 ".TH SnakePlay 0 "Displays a \"UEFI Snake play!\" string."\r\n"
 ".SH NAME\r\n"
 "Snake application.\r\n"
+=======
+// /** @file
+// Sample UEFI Application Reference EDKII Module.
+//
+// This is a sample shell application that will print "UEFI Snake play!" to the
+// UEFI Console based on PCD setting.
+//
+// It demos how to use EDKII PCD mechanism to make code more flexible.
+//
+// Copyright (c) 2021, Wayne Chiu. All rights reserved.<BR>
+//
+// SPDX-License-Identifier: BSD-2-Clause-Patent
+//
+// **/
+
+/=#
+
+#langdef en-US "English"
+
+#string STR_SNAKE_HELP_INFORMATION        #language en-US ""
+".TH SnakePlay 0 "Displays a \"UEFI Snake play!\" string."\r\n"
+".SH NAME\r\n"
+"Snake application.\r\n"
+>>>>>>> e5e1643386f70d5bf6cf89f3f93df62c6b541d16

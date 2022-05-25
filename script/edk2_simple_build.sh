@@ -1,4 +1,9 @@
 #!/bin/bash -x
+<<<<<<< HEAD
+rm -rf ../../tmp
+rm -rf ../../edk2_202111
+=======
+>>>>>>> e5e1643386f70d5bf6cf89f3f93df62c6b541d16
 
 BUILD_SHELL_VERSION=0.01
 GOTO_ROOT=../..
@@ -7,6 +12,17 @@ EDK2VER=''
 TARGET_FOLDER=$(find ${GOTO_ROOT} -maxdepth 1 -type d -name '*'${KEYSEARCH}'*' -print -quit | sed 's/..\///g')
 #/edk2-stable202111_bak
 
+<<<<<<< HEAD
+function pause(){
+  read -s -n 1 -p "Pressany key to continue..."
+  echo ""
+}
+
+
+sudo apt install -y git g++ uuid-dev python3-distutils python-is-python3 nasm acpica-tools qemu
+
+=======
+>>>>>>> e5e1643386f70d5bf6cf89f3f93df62c6b541d16
 if [ "${TARGET_FOLDER}" = "" ]; then
     echo "<ERR>: No such file or directory include the string '${KEYSEARCH}'" && exit 1
 else
@@ -15,7 +31,11 @@ fi
 
 echo ${TARGET_FOLDER}
 echo ${EDK2VER}
+<<<<<<< HEAD
+# pause
+=======
 
+>>>>>>> e5e1643386f70d5bf6cf89f3f93df62c6b541d16
 cd ${GOTO_ROOT}
 pwd
 
@@ -46,6 +66,12 @@ cd ../${KEYSEARCH}_${EDK2VER}
 # sudo apt install libx11-dev
 #    Issue: X11/extensions/XShm.h: No such file or directory
 # sudo apt install libxext-dev
+<<<<<<< HEAD
+#    Issue: /bin/sh: 1: iasl: not found
+#  sudo apt install acpica-tools
+#            // sudo apt install iasl
+=======
+>>>>>>> e5e1643386f70d5bf6cf89f3f93df62c6b541d16
 make -C BaseTools
 . edksetup.sh
 
