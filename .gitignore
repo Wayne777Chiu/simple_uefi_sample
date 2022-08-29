@@ -34,3 +34,9 @@ dkms.conf
 
 #OS files
 desktop.ini
+/.git/desktop.ini
+/.git/refs/desktop.ini
+/.git/refs/heads/desktop.ini
+/.git/refs/remotes/desktop.ini
+/.git/refs/remotes/origin/desktop.ini
+/.git/refs/tags/desktop.ini
