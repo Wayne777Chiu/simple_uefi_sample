@@ -4,7 +4,7 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "D://nb_tmp//tmp//code//uefi_refer//edk2-stable202102/**"
+                "${workspaceFolder}/../edk2_202111/MdeModulePkg/Include"
             ],
             "defines": [
                 "_DEBUG",
